@@ -16,12 +16,18 @@ public class Main {
         String s3 = scanner.nextLine();
 
         String conc = concatenazione(s1, s2, s3);
+        String conc2 = concatenazione2(s1, s2, s3);
         System.out.println(conc);
+        System.out.println(conc2);
 
         scanner.close();
     }
 
     public static String concatenazione(String s1, String s2, String s3) {
         return s1 + s2 + s3;
+    }
+
+    public static String concatenazione2(String s1, String s2, String s3) {
+        return s3 + s2 + s1;
     }
 }
